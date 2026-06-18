@@ -5,7 +5,6 @@ the options the user selects. The user can choose the password length and decide
 whether to include uppercase letters, lowercase letters, numbers, and special
 characters. The password is generated dynamically using JavaScript.
 
-This is **Minor Project 1** for the Full Stack Web Development & MERN Stack Training Program.
 
 ## Features
 
@@ -26,16 +25,10 @@ This is **Minor Project 1** for the Full Stack Web Development & MERN Stack Trai
 
 ## How to Run the Project
 
-### Option 1: Open the live website (easiest)
-
 Just visit the live link and start using it right away:
 https://dhruvpasswordgenrator.vercel.app/
 
-### Option 2: Run it on your own computer
-
-1. Download or clone this repository.
-2. Open the `index.html` file in any web browser.
-3. Select your options and click **Generate Password**.
+To run it locally instead, download this repository and open the `index.html` file in any web browser.
 
 No installation or setup is needed.
 
