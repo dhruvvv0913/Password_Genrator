@@ -26,6 +26,13 @@ This is **Minor Project 1** for the Full Stack Web Development & MERN Stack Trai
 
 ## How to Run the Project
 
+### Option 1: Open the live website (easiest)
+
+Just visit the live link and start using it right away:
+https://dhruvpasswordgenrator.vercel.app/
+
+### Option 2: Run it on your own computer
+
 1. Download or clone this repository.
 2. Open the `index.html` file in any web browser.
 3. Select your options and click **Generate Password**.
@@ -34,4 +41,4 @@ No installation or setup is needed.
 
 ## Live Demo
 
-(Add your live hosted link here after deploying on GitHub Pages / Netlify / Vercel.)
+https://dhruvpasswordgenrator.vercel.app/
