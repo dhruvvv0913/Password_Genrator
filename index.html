@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Password Generator</h1>
+
+    <!-- Box that shows the generated password -->
+    <div class="result-box">
+      <input type="text" id="password" placeholder="Your password will appear here" readonly>
+      <button id="copyBtn" type="button">Copy</button>
+    </div>
+
+    <!-- Length option -->
+    <div class="option">
+      <label for="length">Password Length: <span id="lengthValue">12</span></label>
+      <input type="range" id="length" min="4" max="30" value="12">
+    </div>
+
+    <!-- Character type options -->
+    <div class="option">
+      <label>
+        <input type="checkbox" id="uppercase" checked> Include Uppercase Letters (A-Z)
+      </label>
+    </div>
+
+    <div class="option">
+      <label>
+        <input type="checkbox" id="lowercase" checked> Include Lowercase Letters (a-z)
+      </label>
+    </div>
+
+    <div class="option">
+      <label>
+        <input type="checkbox" id="numbers" checked> Include Numbers (0-9)
+      </label>
+    </div>
+
+    <div class="option">
+      <label>
+        <input type="checkbox" id="symbols"> Include Special Characters (!@#$...)
+      </label>
+    </div>
+
+    <!-- Message shown if the input is not valid -->
+    <p id="message"></p>
+
+    <button id="generateBtn" type="button">Generate Password</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
