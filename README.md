@@ -26,7 +26,7 @@ characters. The password is generated dynamically using JavaScript.
 ## How to Run the Project
 
 Just visit the live link and start using it right away:
-https://dhruvpasswordgenrator.vercel.app/
+https://dhruvpasswordgenrator-veyb.vercel.app/
 
 To run it locally instead, download this repository and open the `index.html` file in any web browser.
 
@@ -34,4 +34,4 @@ No installation or setup is needed.
 
 ## Live Demo
 
-https://dhruvpasswordgenrator.vercel.app/
+https://dhruvpasswordgenrator-veyb.vercel.app/
