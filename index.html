@@ -17,6 +17,12 @@
       <button id="copyBtn" type="button">Copy</button>
     </div>
 
+    <!-- Strength meter -->
+    <div class="strength-track">
+      <div id="strengthBar"></div>
+    </div>
+    <p id="strengthText"></p>
+
     <!-- Length option -->
     <div class="option">
       <label for="length">Password Length: <span id="lengthValue">12</span></label>
@@ -45,6 +51,12 @@
     <div class="option">
       <label>
         <input type="checkbox" id="symbols"> Include Special Characters (!@#$...)
+      </label>
+    </div>
+
+    <div class="option">
+      <label>
+        <input type="checkbox" id="excludeSimilar"> Exclude Similar Characters (i, l, 1, I, o, O, 0)
       </label>
     </div>
 
