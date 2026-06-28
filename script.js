@@ -81,8 +81,8 @@ function showStrength(length, typesCount) {
   strengthText.style.color = color;
 }
 
-// Generate the password when the button is clicked
-generateBtn.addEventListener("click", function () {
+// Build a new password from the selected options
+function generatePassword() {
   // Clear any old message
   message.textContent = "";
 
@@ -150,10 +150,10 @@ generateBtn.addEventListener("click", function () {
 
   // Update the strength meter
   showStrength(length, selectedSets.length);
-});
+}
 
-// Copy the password to the clipboard
-copyBtn.addEventListener("click", function () {
+// Copy the current password to the clipboard
+function copyPassword() {
   // Don't copy if there is no password yet
   if (passwordField.value === "") {
     message.textContent = "Generate a password first.";
@@ -164,9 +164,19 @@ copyBtn.addEventListener("click", function () {
   passwordField.select();
   document.execCommand("copy");
 
-  // Give feedback on the button itself, then change it back after 1.5 seconds
+  // Give feedback on the button, then change it back after 1.5 seconds
   copyBtn.textContent = "Copied!";
   setTimeout(function () {
     copyBtn.textContent = "Copy";
   }, 1500);
-});
+}
+
+// Generate when the button is clicked
+generateBtn.addEventListener("click", generatePassword);
+
+// Copy when the copy button OR the password box is clicked
+copyBtn.addEventListener("click", copyPassword);
+passwordField.addEventListener("click", copyPassword);
+
+// Show a password as soon as the page opens
+generatePassword();

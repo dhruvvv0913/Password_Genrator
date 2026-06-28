@@ -14,8 +14,13 @@ characters. The password is generated dynamically using JavaScript.
   - Lowercase letters (a-z)
   - Numbers (0-9)
   - Special characters (!@#$...)
+- Option to exclude similar-looking characters (i, l, 1, I, o, O, 0)
+- Always includes at least one character from each selected type
+- Password strength meter (Weak / Medium / Strong)
 - Input validation (you must select at least one option)
-- Copy the generated password with one click
+- Generates a password automatically when the page opens
+- Copy the password by clicking the Copy button or the password box
+- Clean dark theme that also works on mobile screens
 
 ## Technologies Used
 

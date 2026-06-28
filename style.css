@@ -1,6 +1,6 @@
 /* Basic page styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   background-color: #0f172a;
   display: flex;
   justify-content: center;
@@ -40,6 +40,7 @@ h1 {
   color: #e2e8f0;
   border: 1px solid #475569;
   border-radius: 4px 0 0 4px;
+  cursor: pointer;
 }
 
 #password::placeholder {
@@ -53,6 +54,7 @@ h1 {
   color: #ffffff;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 #copyBtn:hover {
@@ -94,6 +96,11 @@ h1 {
   cursor: pointer;
 }
 
+/* Make the checkboxes and slider match the theme */
+.option input {
+  accent-color: #6366f1;
+}
+
 #length {
   width: 100%;
   margin-top: 5px;
@@ -117,6 +124,7 @@ h1 {
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 #generateBtn:hover {
